@@ -167,7 +167,7 @@ class ManualColumnResize extends BasePlugin {
         this.selectedCols.push(this.currentCol);
       }
 
-      this.startOffset = box.left - 6;
+      this.startOffset = box.left - 15;
       this.startWidth = parseInt(box.width, 10);
       this.handle.style.top = box.top + 'px';
       this.handle.style.left = this.startOffset + this.startWidth + 'px';
