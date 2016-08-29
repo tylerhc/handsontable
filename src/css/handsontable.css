@@ -235,7 +235,7 @@
 .handsontable .manualColumnResizer.active,
 .handsontable .manualRowResizer:hover,
 .handsontable .manualRowResizer.active {
-  background-color: #AAB;
+  background-color: #990000;
 }
 
 .handsontable .manualColumnResizerGuide {
