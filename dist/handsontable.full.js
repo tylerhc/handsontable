@@ -4276,7 +4276,7 @@ var domHelpers = ($__helpers_47_dom_47_element__ = _dereq_("helpers/dom/element"
 var domEventHelpers = ($__helpers_47_dom_47_event__ = _dereq_("helpers/dom/event"), $__helpers_47_dom_47_event__ && $__helpers_47_dom_47_event__.__esModule && $__helpers_47_dom_47_event__ || {default: $__helpers_47_dom_47_event__});
 var HELPERS = [arrayHelpers, browserHelpers, dataHelpers, dateHelpers, featureHelpers, functionHelpers, mixedHelpers, numberHelpers, objectHelpers, settingHelpers, stringHelpers, unicodeHelpers];
 var DOM = [domHelpers, domEventHelpers];
-Handsontable.buildDate = 'Wed Jul 27 2016 12:03:17 GMT+0200 (CEST)';
+Handsontable.buildDate = 'Mon Aug 29 2016 14:03:47 GMT-0500 (CDT)';
 Handsontable.packageName = 'handsontable';
 Handsontable.version = '0.26.1';
 var baseVersion = '@@baseVersion';
@@ -27173,7 +27173,7 @@ if (typeof exports !== "undefined") {
 },{}],"numbro":[function(_dereq_,module,exports){
 /*!
  * numbro.js
- * version : 1.9.2
+ * version : 1.9.3
  * author : Företagsplatsen AB
  * license : MIT
  * http://www.foretagsplatsen.se
@@ -27187,7 +27187,7 @@ if (typeof exports !== "undefined") {
     ************************************/
 
     var numbro,
-        VERSION = '1.9.2',
+        VERSION = '1.9.3',
         binarySuffixes = ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB'],
         decimalSuffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
         bytes = {
@@ -28221,7 +28221,12 @@ if (typeof exports !== "undefined") {
         return (typeof process !== 'undefined') &&
             (process.browser === undefined) &&
             process.title &&
-            (process.title.indexOf('node') === 0 || process.title === 'grunt' || process.title === 'gulp') &&
+            (
+                process.title.indexOf('node') === 0 ||
+                process.title.indexOf('meteor-tool') > 0 ||
+                process.title === 'grunt' ||
+                process.title === 'gulp'
+            ) &&
             (typeof _dereq_ !== 'undefined');
     }
 

@@ -234,7 +234,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 .handsontable .manualColumnMover.active,
 .handsontable .manualRowMover:hover,
 .handsontable .manualRowMover.active{
-  background-color: #88F;
+  background-color: #990000;
 }
 
 /* row + column resizer*/
@@ -244,7 +244,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   top: 0;
   cursor: col-resize;
   z-index: 110;
-  width: 5px;
+  width: 15px;
   height: 25px;
 }
 
@@ -261,7 +261,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 .handsontable .manualColumnResizer.active,
 .handsontable .manualRowResizer:hover,
 .handsontable .manualRowResizer.active {
-  background-color: #AAB;
+  background-color: #990000;
 }
 
 .handsontable .manualColumnResizerGuide {
