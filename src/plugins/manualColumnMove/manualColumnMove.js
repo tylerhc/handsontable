@@ -229,7 +229,7 @@ class ManualColumnMove extends BasePlugin {
    */
   refreshHandlePosition(TH, delta) {
     let box = TH.getBoundingClientRect();
-    let handleWidth = 6;
+    let handleWidth = 15;
 
     if (delta > 0) {
       this.handleElement.style.left = (box.left + box.width - handleWidth) + 'px';

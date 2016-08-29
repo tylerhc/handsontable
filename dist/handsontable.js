@@ -4274,7 +4274,7 @@ var domHelpers = ($__helpers_47_dom_47_element__ = _dereq_("helpers/dom/element"
 var domEventHelpers = ($__helpers_47_dom_47_event__ = _dereq_("helpers/dom/event"), $__helpers_47_dom_47_event__ && $__helpers_47_dom_47_event__.__esModule && $__helpers_47_dom_47_event__ || {default: $__helpers_47_dom_47_event__});
 var HELPERS = [arrayHelpers, browserHelpers, dataHelpers, dateHelpers, featureHelpers, functionHelpers, mixedHelpers, numberHelpers, objectHelpers, settingHelpers, stringHelpers, unicodeHelpers];
 var DOM = [domHelpers, domEventHelpers];
-Handsontable.buildDate = 'Mon Aug 29 2016 14:03:47 GMT-0500 (CDT)';
+Handsontable.buildDate = 'Mon Aug 29 2016 14:28:02 GMT-0500 (CDT)';
 Handsontable.packageName = 'handsontable';
 Handsontable.version = '0.26.1';
 var baseVersion = '@@baseVersion';
@@ -16438,7 +16438,7 @@ var $ManualColumnMove = ManualColumnMove;
   },
   refreshHandlePosition: function(TH, delta) {
     var box = TH.getBoundingClientRect();
-    var handleWidth = 6;
+    var handleWidth = 15;
     if (delta > 0) {
       this.handleElement.style.left = (box.left + box.width - handleWidth) + 'px';
     } else {
